@@ -1,4 +1,4 @@
-# Querying BIM Models with LLM Agents Across Data Representations
+# Querying BIM Models with LLM Agents: A Comparison of Data Representations
 
 Companion code for the ECPPM 2026 paper by Changyu Du, Sylvain Hellin, Stefan Fuchs, and André Borrmann (Technical University of Munich).
 
