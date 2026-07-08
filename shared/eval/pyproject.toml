@@ -1,0 +1,16 @@
+[project]
+name = "bim-eval"
+version = "0.1.0"
+description = "BAML multi-criteria LLM judge for BIM QA evaluation"
+authors = [
+    { name = "Sylvain Hellin", email = "sylvain.hellin@tum.de" },
+    { name = "Changyu Du", email = "changyu.du@tum.de" },
+]
+requires-python = ">=3.12"
+dependencies = [
+    "baml-py>=0.217,<0.218",
+    "pandas>=2.2",
+    "pydantic>=2.13.1",
+    "python-dotenv>=1.0",
+    "typing-extensions>=4.15.0",
+]

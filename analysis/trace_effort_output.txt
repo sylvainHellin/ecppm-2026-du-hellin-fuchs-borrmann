@@ -1,0 +1,26 @@
+========================================================================
+AGENT EFFORT FROM TRACES (comparable proxy; tokens columns are NOT comparable)
+========================================================================
+approach          n calls_mean calls_med turns_med   chars_mean   chars_med
+filesystem      507       20.4        18        10       45,875      31,131
+graphdb         507       23.3        21        14       42,378      30,463
+ifcopenshell    507        8.8         8         9       26,329      20,847
+sql             507       12.3        10        10       23,951      19,923
+
+Context chars by category (mean):
+  cat1: filesystem=34,785  graphdb=35,073  ifcopenshell=21,279  sql=18,537
+  cat2: filesystem=46,731  graphdb=36,658  ifcopenshell=23,287  sql=23,543
+  cat3: filesystem=46,162  graphdb=57,570  ifcopenshell=30,666  sql=27,980
+  cat4: filesystem=51,417  graphdb=55,766  ifcopenshell=36,699  sql=26,719
+
+Tool calls by category (mean):
+  cat1: filesystem=15.5  graphdb=22.9  ifcopenshell=8.2  sql=10.3
+  cat2: filesystem=18.9  graphdb=20.2  ifcopenshell=7.9  sql=11.3
+  cat3: filesystem=22.5  graphdb=28.2  ifcopenshell=11.4  sql=15.4
+  cat4: filesystem=27.1  graphdb=29.8  ifcopenshell=10.4  sql=15.0
+
+Context-char ratio vs filesystem (mean):
+  filesystem     1.0x
+  graphdb        0.9x
+  ifcopenshell   0.6x
+  sql            0.5x

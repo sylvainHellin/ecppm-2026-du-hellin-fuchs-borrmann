@@ -1,0 +1,56 @@
+# Environments / secrets
+.env
+.envrc
+.venv
+env/
+venv/
+
+# Phoenix traces (local OTEL storage)
+traces/
+
+# ifc-bench data (download via scripts/download_data.py)
+data/questions/ifc-bench-v2.csv
+data/ifc-bench/
+data/models/
+data/conversions/
+
+# Agent working dirs
+.agents/
+.claude/
+.pi-subagents/
+
+# OS
+.DS_Store
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+wheels/
+*.egg-info/
+*.egg
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter / IPython
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# Type checkers / linters
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# Logs
+*.log

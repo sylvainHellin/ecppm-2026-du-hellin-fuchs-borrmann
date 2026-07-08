@@ -1,0 +1,50 @@
+{
+  "run_dir": "<repo>/results/ifc/minimax_MiniMax-M2.7_20260419_130804",
+  "judge": "minimax",
+  "metrics": {
+    "total": 203,
+    "correct": 159,
+    "wrong": 41,
+    "abstained": 3,
+    "errors": 0,
+    "accuracy": 0.795,
+    "abstention_rate": 0.014778325123152709,
+    "faithfulness_rate": 0.8592964824120602,
+    "completeness_rate": 0.9346733668341709,
+    "transparency_rate": 0.9045226130653267,
+    "relevance_rate": 0.9798994974874372,
+    "total_input_tokens": 444494,
+    "total_output_tokens": 199317,
+    "total_duration": 3146.29,
+    "by_category": {
+      "1": {
+        "count": 37,
+        "correct": 26,
+        "wrong": 11,
+        "abstained": 0,
+        "accuracy": 0.7027027027027027
+      },
+      "2": {
+        "count": 101,
+        "correct": 81,
+        "wrong": 18,
+        "abstained": 2,
+        "accuracy": 0.8181818181818182
+      },
+      "3": {
+        "count": 22,
+        "correct": 18,
+        "wrong": 4,
+        "abstained": 0,
+        "accuracy": 0.8181818181818182
+      },
+      "4": {
+        "count": 43,
+        "correct": 34,
+        "wrong": 8,
+        "abstained": 1,
+        "accuracy": 0.8095238095238095
+      }
+    }
+  }
+}

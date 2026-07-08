@@ -1,0 +1,60 @@
+### Abstention by category
+  filesystem     cat1=1 cat2=1 cat3=1 cat4=2 | total=5
+  graphdb        cat1=0 cat2=1 cat3=3 cat4=4 | total=8
+  ifcopenshell   cat1=0 cat2=1 cat3=0 cat4=0 | total=1
+  sql            cat1=0 cat2=0 cat3=3 cat4=1 | total=4
+
+### Category 3 paired McNemar (sql/ifcopenshell strong here)
+  filesystem   vs graphdb     : only_filesystem=9 only_graphdb=12 p_exact=0.664
+  filesystem   vs ifcopenshell: only_filesystem=4 only_ifcopenshell=11 p_exact=0.118
+  filesystem   vs sql         : only_filesystem=4 only_sql=12 p_exact=0.077
+  graphdb      vs ifcopenshell: only_graphdb=6 only_ifcopenshell=10 p_exact=0.454
+  graphdb      vs sql         : only_graphdb=6 only_sql=11 p_exact=0.332
+  ifcopenshell vs sql         : only_ifcopenshell=6 only_sql=7 p_exact=1.000
+
+### Category 2 paired McNemar (largest category n=288)
+  filesystem   vs graphdb     : only_filesystem=46 only_graphdb=42 p_exact=0.749
+  filesystem   vs ifcopenshell: only_filesystem=36 only_ifcopenshell=38 p_exact=0.908
+  filesystem   vs sql         : only_filesystem=45 only_sql=35 p_exact=0.314
+  graphdb      vs ifcopenshell: only_graphdb=43 only_ifcopenshell=49 p_exact=0.602
+  graphdb      vs sql         : only_graphdb=48 only_sql=42 p_exact=0.598
+  ifcopenshell vs sql         : only_ifcopenshell=36 only_sql=24 p_exact=0.155
+
+### CONSENSUS-HARD questions (0/4 correct), n=17
+  [cat1|digital_hub] What materials are used for the structural system?
+  [cat2|digital_hub] Which pipe fitting types are used in this building including the number of each, and how are th
+  [cat2|digital_hub] What duct types are used in this building and their respective counts?
+  [cat4|duplex] What is the total area of interior wall surfaces requiring painting?
+  [cat4|duplex] What is the total surface area of the faÖßade?
+  [cat1|duplex] What are the specifications of the hot water heating equipment in the model?
+  [cat2|ettenheim_gis] What is the breakdown of buildings by category, including their counts?
+  [cat2|wbdg_office] What are the total lengths of exterior and interior walls?
+  [cat2|wbdg_office] Could you provide a breakdown of the apparent electrical loads for each type of lighting fixtur
+  [cat2|wbdg_office] What are the airflow rates for the HVAC terminals, including totals and averages?
+  [cat2|wbdg_office] What are the types of air terminals installed in the building, including their quantities and p
+  [cat2|wbdg_office] What voltage levels are used in the electrical system, with load distribution?
+  [cat2|wbdg_office] Which components make up the ventilation system, with counts by component type?
+  [cat2|wbdg_office] Which heating systems are installed, showing component counts by system type?
+  [cat2|wbdg_office] Which types of duct fittings are installed, with quantities by fitting type?
+  [cat2|wbdg_office] Which types of fans are used in the building, organized by size and system?
+  [cat2|wbdg_office] Which slab types are present, and how many of each?
+
+### Per-project: which approach wins each project (paired; correct/answered)
+  4351                       n= 44 best=graphdb(83%) worst=ifcopenshell(75%)
+  ac20                       n= 48 best=filesystem(87%) worst=sql(69%)
+  digital_hub                n=102 best=filesystem(82%) worst=sql(71%)
+  duplex                     n= 69 best=ifcopenshell(87%) worst=filesystem(75%)
+  ettenheim_gis              n= 21 best=sql(71%) worst=ifcopenshell(57%)
+  fantasy_hotel_1            n= 41 best=ifcopenshell(85%) worst=graphdb(72%)
+  fantasy_office_building_1  n= 35 best=ifcopenshell(89%) worst=graphdb(74%)
+  fantasy_office_building_2  n= 31 best=ifcopenshell(94%) worst=filesystem(83%)
+  fantasy_office_building_3  n= 35 best=sql(91%) worst=filesystem(76%)
+  wbdg_office                n= 81 best=graphdb(72%) worst=filesystem(60%)
+
+### Pairwise agreement rate (fraction of questions with same correct/wrong outcome)
+  filesystem   vs graphdb     : 70.4%
+  filesystem   vs ifcopenshell: 74.8%
+  filesystem   vs sql         : 73.4%
+  graphdb      vs ifcopenshell: 71.2%
+  graphdb      vs sql         : 71.8%
+  ifcopenshell vs sql         : 78.1%

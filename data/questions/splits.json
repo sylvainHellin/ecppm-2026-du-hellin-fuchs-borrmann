@@ -1,0 +1,28 @@
+{
+  "_comment": "Project-level dev/test split for ifc-bench-v2. 'dev' is used to iterate on agent/prompt design. 'test' is the frozen evaluation set. 'excluded' are projects held out of both (license, quality, or redundancy issues).",
+  "dev": [
+    "dental_clinic",
+    "fantasy_residential_building_1",
+    "fzk_house",
+    "samuel_macalister_sample_house"
+  ],
+  "test": [
+    "4351",
+    "ac20",
+    "digital_hub",
+    "duplex",
+    "ettenheim_gis",
+    "fantasy_hotel_1",
+    "fantasy_office_building_1",
+    "fantasy_office_building_2",
+    "fantasy_office_building_3",
+    "wbdg_office"
+  ],
+  "excluded": [
+    "hitos",
+    "molio",
+    "schependomlaan",
+    "sixty5",
+    "smiley_west"
+  ]
+}

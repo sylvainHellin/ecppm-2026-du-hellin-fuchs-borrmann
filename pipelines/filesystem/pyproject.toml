@@ -1,0 +1,24 @@
+[project]
+name = "filesystem"
+version = "0.1.0"
+description = "IFC-as-filesystem pipeline (ifc2fs conversion + DeepAgent with file tools)"
+authors = [
+    { name = "Sylvain Hellin", email = "sylvain.hellin@tum.de" },
+    { name = "Changyu Du", email = "changyu.du@tum.de" },
+]
+requires-python = ">=3.12"
+dependencies = [
+    "shared",
+    "deepagents>=0.5.2,<0.6",
+    "langchain[openai,anthropic]>=1.2",
+    "langchain-google-genai>=4.2",
+    "httpx>=0.28",
+    "jinja2>=3.1",
+    "pandas>=2.2",
+    "pydantic>=2",
+    "python-dotenv>=1.0",
+    "ifcopenshell>=0.8.5",
+]
+
+[tool.uv.sources]
+shared = { path = "../../shared", editable = true }

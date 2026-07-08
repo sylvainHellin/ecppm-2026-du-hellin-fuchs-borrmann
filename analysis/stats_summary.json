@@ -1,0 +1,15 @@
+{
+  "N": 507,
+  "overall_correct": {
+    "filesystem": 387,
+    "graphdb": 383,
+    "ifcopenshell": 399,
+    "sql": 378
+  },
+  "abstention": {
+    "filesystem": 5,
+    "graphdb": 8,
+    "ifcopenshell": 1,
+    "sql": 4
+  }
+}

@@ -1,0 +1,3 @@
+ifcopenshell
+neomodel
+python-dotenv

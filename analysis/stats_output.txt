@@ -1,0 +1,170 @@
+PAIRED ROWS: 507
+
+======================================================================
+OVERALL ACCURACY (correct / answered; abstained excluded)
+======================================================================
+  filesystem     387/502  acc=77.1% [73.2,80.6]
+  graphdb        383/499  acc=76.8% [72.9,80.2]
+  ifcopenshell   399/506  acc=78.9% [75.1,82.2]
+  sql            378/503  acc=75.1% [71.2,78.7]
+
+ABSTENTION counts:
+  filesystem     5  (0.99%)
+  graphdb        8  (1.58%)
+  ifcopenshell   1  (0.20%)
+  sql            4  (0.79%)
+
+[reference] accuracy over ALL questions (correct / 507):
+  filesystem     387/507 = 76.3% [72.4,79.8]
+  graphdb        383/507 = 75.5% [71.6,79.1]
+  ifcopenshell   399/507 = 78.7% [74.9,82.0]
+  sql            378/507 = 74.6% [70.6,78.2]
+
+======================================================================
+ACCURACY BY CATEGORY (correct / answered)
+======================================================================
+
+Cat 1 (Direct Info Retrieval) n=65
+  filesystem     84.4% [73.6,91.3]  (answered=64)
+  graphdb        83.1% [72.2,90.3]  (answered=65)
+  ifcopenshell   86.2% [75.7,92.5]  (answered=65)
+  sql            83.1% [72.2,90.3]  (answered=65)
+
+Cat 2 (Computational Aggregation) n=288
+  filesystem     74.2% [68.9,78.9]  (answered=287)
+  graphdb        72.8% [67.4,77.6]  (answered=287)
+  ifcopenshell   74.9% [69.6,79.6]  (answered=287)
+  sql            70.5% [65.0,75.5]  (answered=288)
+
+Cat 3 (Geometric/Spatial Computation) n=62
+  filesystem     77.0% [65.1,85.8]  (answered=61)
+  graphdb        84.7% [73.5,91.8]  (answered=59)
+  ifcopenshell   87.1% [76.6,93.3]  (answered=62)
+  sql            93.2% [83.8,97.3]  (answered=59)
+
+Cat 4 (Incomplete Information) n=92
+  filesystem     81.1% [71.8,87.9]  (answered=90)
+  graphdb        79.5% [70.0,86.7]  (answered=88)
+  ifcopenshell   80.4% [71.2,87.3]  (answered=92)
+  sql            72.5% [62.6,80.6]  (answered=91)
+
+======================================================================
+CRITERION PASS RATES (Yes / (Yes+No), Na excluded)
+======================================================================
+
+faithfulness
+  filesystem     82.1% [78.5,85.2]  (Yes=412 No=90 Na=5)
+  graphdb        82.1% [78.5,85.2]  (Yes=409 No=89 Na=9)
+  ifcopenshell   84.2% [80.8,87.1]  (Yes=426 No=80 Na=1)
+  sql            79.1% [75.4,82.4]  (Yes=398 No=105 Na=4)
+
+completeness
+  filesystem     90.8% [88.0,93.1]  (Yes=456 No=46 Na=5)
+  graphdb        90.3% [87.4,92.6]  (Yes=449 No=48 Na=10)
+  ifcopenshell   93.2% [90.7,95.1]  (Yes=469 No=34 Na=4)
+  sql            90.8% [87.9,93.0]  (Yes=453 No=46 Na=8)
+
+transparency
+  filesystem     93.6% [91.1,95.4]  (Yes=470 No=32 Na=5)
+  graphdb        93.8% [91.3,95.6]  (Yes=466 No=31 Na=10)
+  ifcopenshell   96.0% [94.0,97.4]  (Yes=486 No=20 Na=1)
+  sql            94.2% [91.8,96.0]  (Yes=474 No=29 Na=4)
+
+relevance
+  filesystem     96.6% [94.6,97.9]  (Yes=485 No=17 Na=5)
+  graphdb        96.4% [94.3,97.7]  (Yes=479 No=18 Na=10)
+  ifcopenshell   96.6% [94.7,97.9]  (Yes=489 No=17 Na=1)
+  sql            95.8% [93.7,97.3]  (Yes=482 No=21 Na=4)
+
+======================================================================
+FAILURE MODE among non-correct rows: which criterion fails
+======================================================================
+  filesystem     wrong=115  faith_No=90 compl_No=46 transp_No=32 relev_No=17
+  graphdb        wrong=116  faith_No=89 compl_No=48 transp_No=31 relev_No=18
+  ifcopenshell   wrong=107  faith_No=80 compl_No=34 transp_No=20 relev_No=17
+  sql            wrong=125  faith_No=105 compl_No=46 transp_No=29 relev_No=21
+
+======================================================================
+PAIRWISE McNEMAR (accuracy, paired by question)
+======================================================================
+  b = row-approach correct & col wrong ; c = row wrong & col correct
+  filesystem   vs graphdb     : only_filesystem= 77 only_graphdb= 73 both=310 neither=47 | chi2=0.06 p_exact=0.8066 ns
+  filesystem   vs ifcopenshell: only_filesystem= 58 only_ifcopenshell= 70 both=329 neither=50 | chi2=0.95 p_exact=0.3309 ns
+  filesystem   vs sql         : only_filesystem= 72 only_sql= 63 both=315 neither=57 | chi2=0.47 p_exact=0.4913 ns
+  graphdb      vs ifcopenshell: only_graphdb= 65 only_ifcopenshell= 81 both=318 neither=43 | chi2=1.54 p_exact=0.2143 ns
+  graphdb      vs sql         : only_graphdb= 74 only_sql= 69 both=309 neither=55 | chi2=0.11 p_exact=0.7381 ns
+  ifcopenshell vs sql         : only_ifcopenshell= 66 only_sql= 45 both=333 neither=63 | chi2=3.60 p_exact=0.0572 ns
+
+======================================================================
+COCHRAN'S Q (are the 4 approaches equal in accuracy?)
+======================================================================
+  Q=3.554  df=3  p=0.3139
+  by category:
+    cat1: Q=0.439 df=3 p=0.9321 (n=65)
+    cat2: Q=2.083 df=3 p=0.5554 (n=288)
+    cat3: Q=5.020 df=3 p=0.1703 (n=62)
+    cat4: Q=3.121 df=3 p=0.3734 (n=92)
+
+======================================================================
+QUESTION-LEVEL AGREEMENT (how many of 4 got it right)
+======================================================================
+  0/4 correct:  17  (3.4%)
+  1/4 correct:  50  (9.9%)
+  2/4 correct:  63  (12.4%)
+  3/4 correct: 137  (27.0%)
+  4/4 correct: 240  (47.3%)
+  -> consensus-correct (4/4): 240
+  -> consensus-hard (0/4):    17
+
+UNIQUE STRENGTH (only this approach correct, other 3 wrong):
+  filesystem     12
+  graphdb        20
+  ifcopenshell   10
+  sql            8
+
+UNIQUE WEAKNESS (only this approach wrong, other 3 correct):
+  filesystem     38
+  graphdb        43
+  ifcopenshell   26
+  sql            30
+
+CONSENSUS-HARD (0/4) breakdown by category:
+  cat1: 2
+  cat2: 13
+  cat3: 0
+  cat4: 2
+
+CONSENSUS-HARD by project:
+  wbdg_office                  10
+  digital_hub                  3
+  duplex                       3
+  ettenheim_gis                1
+
+======================================================================
+EFFICIENCY (per-question medians/means)
+======================================================================
+  filesystem     in_tok: mean=2,365 median=2,235 sum=1,198,869 | out_tok: mean=977 median=834 | elapsed: mean=81.4s median=63.9s
+  graphdb        in_tok: mean=2,350 median=2,207 sum=1,191,415 | out_tok: mean=1,002 median=840 | elapsed: mean=129.7s median=102.6s
+  ifcopenshell   in_tok: mean=139,330 median=105,829 sum=70,640,071 | out_tok: mean=3,767 median=3,136 | elapsed: mean=73.2s median=58.1s
+  sql            in_tok: mean=199,990 median=149,881 sum=101,395,000 | out_tok: mean=3,758 median=3,072 | elapsed: mean=105.6s median=77.8s
+
+Input tokens by category (mean):
+  cat1: filesystem=2,318 graphdb=2,311 ifcopenshell=121,930 sql=165,996
+  cat2: filesystem=2,367 graphdb=2,329 ifcopenshell=119,668 sql=180,965
+  cat3: filesystem=2,587 graphdb=2,492 ifcopenshell=181,374 sql=262,061
+  cat4: filesystem=2,241 graphdb=2,348 ifcopenshell=184,836 sql=241,734
+
+======================================================================
+ACCURACY BY PROJECT (correct / answered)
+======================================================================
+  project                       filesy  graphd  ifcope     sql   n
+  4351                           77.3%   82.9%   75.0%   76.7%  44
+  ac20                           87.2%   83.3%   79.2%   68.8%  48
+  digital_hub                    82.4%   74.5%   75.2%   71.3%  102
+  duplex                         75.4%   79.1%   87.0%   79.7%  69
+  ettenheim_gis                  66.7%   65.0%   57.1%   71.4%  21
+  fantasy_hotel_1                82.9%   72.5%   85.4%   82.9%  41
+  fantasy_office_building_1      85.7%   74.3%   88.6%   81.8%  35
+  fantasy_office_building_2      83.3%   87.1%   93.5%   83.9%  31
+  fantasy_office_building_3      75.8%   79.4%   82.9%   91.4%  35
+  wbdg_office                    60.0%   71.6%   69.1%   63.0%  81

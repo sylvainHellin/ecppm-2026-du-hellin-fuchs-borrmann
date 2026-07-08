@@ -1,0 +1,44 @@
+{
+  "executionEnvironments": [
+    {
+      "root": "pipelines/ifc",
+      "extraPaths": [
+        "pipelines/ifc/.venv/lib/python3.13/site-packages",
+        "shared/src"
+      ]
+    },
+    {
+      "root": "pipelines/sql",
+      "extraPaths": [
+        "pipelines/sql/.venv/lib/python3.13/site-packages",
+        "shared/src"
+      ]
+    },
+    {
+      "root": "pipelines/filesystem",
+      "extraPaths": [
+        "pipelines/filesystem/.venv/lib/python3.13/site-packages",
+        "shared/src"
+      ]
+    },
+    {
+      "root": "pipelines/cypher",
+      "extraPaths": [
+        "pipelines/cypher/.venv/lib/python3.13/site-packages",
+        "shared/src"
+      ]
+    },
+    {
+      "root": "shared/eval",
+      "extraPaths": [
+        "shared/eval/.venv/lib/python3.13/site-packages"
+      ]
+    },
+    {
+      "root": "shared",
+      "extraPaths": [
+        "shared/.venv/lib/python3.13/site-packages"
+      ]
+    }
+  ]
+}

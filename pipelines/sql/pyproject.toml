@@ -1,0 +1,23 @@
+[project]
+name = "sql"
+version = "0.1.0"
+description = "SQLite + SQL pipeline"
+authors = [
+    { name = "Sylvain Hellin", email = "sylvain.hellin@tum.de" },
+    { name = "Changyu Du", email = "changyu.du@tum.de" },
+]
+requires-python = ">=3.12"
+dependencies = [
+    "shared",
+    "ifcopenshell>=0.8.2",
+    "ifcpatch>=0.8.2",
+    "jupyter-client>=8.6",
+    "ipykernel>=6.29",
+    "jinja2>=3.1",
+    "tiktoken>=0.7",
+    "pandas>=2.2",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv.sources]
+shared = { path = "../../shared", editable = true }
