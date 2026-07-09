@@ -1,0 +1,140 @@
+{
+  "dataset": "v2",
+  "agent_model": "minimax:MiniMax-M2.7",
+  "judge_model": "baml:minimax",
+  "judge_type": "baml",
+  "timestamp": "2026-06-06T12:46:11.176743",
+  "total_questions": 507,
+  "correct_count": 378,
+  "wrong_count": 125,
+  "abstained_count": 4,
+  "error_count": 0,
+  "accuracy": 0.7515,
+  "abstention_rate": 0.0079,
+  "faithfulness_rate": 0.7913,
+  "completeness_rate": 0.9078,
+  "transparency_rate": 0.9423,
+  "relevance_rate": 0.9583,
+  "classification_distribution": {
+    "correct": 378,
+    "wrong": 125,
+    "abstained": 4,
+    "error": 0
+  },
+  "total_input_tokens": 101395000,
+  "total_output_tokens": 1905097,
+  "total_judge_duration_s": 13961.28,
+  "average_elapsed_s": 105.6,
+  "by_category": {
+    "1": {
+      "total": 65,
+      "correct": 54,
+      "wrong": 11,
+      "abstained": 0,
+      "accuracy": 0.8308
+    },
+    "2": {
+      "total": 288,
+      "correct": 203,
+      "wrong": 85,
+      "abstained": 0,
+      "accuracy": 0.7049
+    },
+    "3": {
+      "total": 62,
+      "correct": 55,
+      "wrong": 4,
+      "abstained": 3,
+      "accuracy": 0.9322
+    },
+    "4": {
+      "total": 92,
+      "correct": 66,
+      "wrong": 25,
+      "abstained": 1,
+      "accuracy": 0.7253
+    }
+  },
+  "by_project": {
+    "4351": {
+      "total": 44,
+      "correct": 33,
+      "wrong": 10,
+      "abstained": 1,
+      "accuracy": 0.7674,
+      "accuracy_evaluated": 0.7674
+    },
+    "ac20": {
+      "total": 48,
+      "correct": 33,
+      "wrong": 15,
+      "abstained": 0,
+      "accuracy": 0.6875,
+      "accuracy_evaluated": 0.6875
+    },
+    "digital_hub": {
+      "total": 102,
+      "correct": 72,
+      "wrong": 29,
+      "abstained": 1,
+      "accuracy": 0.7129,
+      "accuracy_evaluated": 0.7129
+    },
+    "duplex": {
+      "total": 69,
+      "correct": 55,
+      "wrong": 14,
+      "abstained": 0,
+      "accuracy": 0.7971,
+      "accuracy_evaluated": 0.7971
+    },
+    "ettenheim_gis": {
+      "total": 21,
+      "correct": 15,
+      "wrong": 6,
+      "abstained": 0,
+      "accuracy": 0.7143,
+      "accuracy_evaluated": 0.7143
+    },
+    "fantasy_hotel_1": {
+      "total": 41,
+      "correct": 34,
+      "wrong": 7,
+      "abstained": 0,
+      "accuracy": 0.8293,
+      "accuracy_evaluated": 0.8293
+    },
+    "fantasy_office_building_1": {
+      "total": 35,
+      "correct": 27,
+      "wrong": 6,
+      "abstained": 2,
+      "accuracy": 0.8182,
+      "accuracy_evaluated": 0.8182
+    },
+    "fantasy_office_building_2": {
+      "total": 31,
+      "correct": 26,
+      "wrong": 5,
+      "abstained": 0,
+      "accuracy": 0.8387,
+      "accuracy_evaluated": 0.8387
+    },
+    "fantasy_office_building_3": {
+      "total": 35,
+      "correct": 32,
+      "wrong": 3,
+      "abstained": 0,
+      "accuracy": 0.9143,
+      "accuracy_evaluated": 0.9143
+    },
+    "wbdg_office": {
+      "total": 81,
+      "correct": 51,
+      "wrong": 30,
+      "abstained": 0,
+      "accuracy": 0.6296,
+      "accuracy_evaluated": 0.6296
+    }
+  }
+}

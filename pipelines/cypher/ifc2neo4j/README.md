@@ -1,7 +1,9 @@
 # ifc2neo4j
 
-Standalone IFC-to-Neo4j import module (extracted from the authors' ConMan2 codebase).  
+Standalone IFC-to-Neo4j import module, adapted from [ConMan2](https://github.com/seb-esser/ConMan2) (Sebastian Esser et al., TUM), a graph-based version manager for BIM models.  
 Parses an IFC (STEP P21) file and stores the complete model structure as a labeled property graph in Neo4j — ready for Cypher queries.
+
+The module has been trimmed down to just the IFC→graph import path needed by the cypher pipeline; the versioning, diffing, and merging features of ConMan2 are not included here.
 
 ## Graph Schema
 
@@ -75,6 +77,13 @@ ifc2neo4j/
 ├── .env.example
 └── README.md
 ```
+
+## Attribution
+
+Adapted from [ConMan2](https://github.com/seb-esser/ConMan2) (MIT). If you build on the graph representation, please cite:
+
+- S. Esser, S. Vilgertshofer, A. Borrmann, "Graph-based version control for asynchronous BIM collaboration", *Advanced Engineering Informatics* 53 (2022) 101664. [doi:10.1016/j.aei.2022.101664](https://doi.org/10.1016/j.aei.2022.101664)
+- S. Esser, S. Vilgertshofer, A. Borrmann, "Version control for asynchronous BIM collaboration: Model merging through graph analysis and transformation", *Automation in Construction* 155 (2023) 105063. [doi:10.1016/j.autcon.2023.105063](https://doi.org/10.1016/j.autcon.2023.105063)
 
 ## License
 
