@@ -178,8 +178,22 @@ The four representations differ by only 4.1 percentage points, and the differenc
 
 ## Citation
 
-<!-- TODO: final citation once the proceedings are published -->
-Citation: TBA (to appear in Proceedings of ECPPM 2026, Cardiff, UK, 9-11 September 2026).
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22679659.svg)](https://doi.org/10.5281/zenodo.22679659)
+
+C. Du, S. Hellin, S. Fuchs, A. Borrmann, "Querying BIM Models with LLM Agents: A Comparison of Data Representations", in *Proceedings of the European Conference on Product and Process Modelling (ECPPM 2026)*, Cardiff, UK, 9–11 September 2026. [doi:10.5281/zenodo.22679659](https://doi.org/10.5281/zenodo.22679659)
+
+```bibtex
+@inproceedings{du2026querying,
+  title     = {Querying {BIM} Models with {LLM} Agents: A Comparison of Data Representations},
+  author    = {Du, Changyu and Hellin, Sylvain and Fuchs, Stefan and Borrmann, Andr{\'e}},
+  booktitle = {Proceedings of the European Conference on Product and Process Modelling (ECPPM 2026)},
+  address   = {Cardiff, United Kingdom},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.22679659},
+  url       = {https://doi.org/10.5281/zenodo.22679659}
+}
+```
 
 ## Acknowledgments
 
